@@ -9,5 +9,6 @@
   	<module>calculadora</module>
   	<module>palabrasrepetidas</module>
   	<module>RomanNumbers</module>
+      <module>Pangram</module>
   </modules>
 </project>
