@@ -8,6 +8,7 @@ public class CalculatorImpl implements Calculator {
 	public Calculator sum(Double valueA, Double valueB) {
 		value = valueA;
 		return sum(valueB);
+
 	}
 	
 	@Override
