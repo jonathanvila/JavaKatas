@@ -24,4 +24,21 @@ public class PangramTest {
     public void whenSomeLettersThenNotPangram() {
       assertFalse("if some letters then not pangram", pangram.isPangram("hola"));
   }
+    @Test
+    public void whenEmptyThenNotPangram() {
+        assertFalse("if empty then false", pangram.isPangram(""));
+    }
+
+    @Test
+    public void whenAlphabetThenTrue() {
+        String alfabeto = "abcdefghijklmnñopqrstuvwxyz";
+        assertTrue("if " + alfabeto + " then true", pangram.isPangram(alfabeto));
+    }
+
+    @Test
+    public void whenSomeWordsThatUsesAllCharsThenTrue() {
+        String texto = "ahorabueycon desde el elefante grande hemos insertado jamon kilos la mema nuna año o pero que ria ssin tuvwxyz";
+        assertTrue("if " + texto + " then true", pangram.isPangram(texto));
+
+    }
 }
